@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Moview</title>
+
+    <script>
+
+
+      function login_click(){
+        var user_id = document.getElementById("ID_INPUT").value;
+        var user_pw = document.getElementById("PW_INPUT").value;
+        if(user_id=='lee'&&user_pw=='1234'){
+          location.href="C:/Users/aksdn/Desktop/web/TermProject/second/main.html";
+        } else {
+          alert("ID,PW를 확인해주세요.");
+        }
+      }
+      function register_click(){
+          location.href="page_register.html";
+
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <!--가운데 로그인 창 영역 -->
+    <div class="center" style="position:absolute;
+top: 50%;
+left:50%;
+width: 550px;
+height:300px;
+margin: -150px 0 0 -275px;
+size:150%;
+">
+
+      <!--MOVIEW 로고 -->
+      <div class="logo" style="position:absolute;
+  top: 40px;
+  left:229px;
+  width: 180px;
+  height:50px;
+  margin: -25px 0 0 -90px;
+  font-size:300%;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  ">
+        <img src="C:\Users\aksdn\Desktop\web\TermProject\Logo_Moveiw.png" alt=""
+        width="250px">
+      </div>
+
+      <!--로그인 텍스트 -->
+      <div class="text_login" style="position:absolute;
+  width: 60px;
+  height:20px;
+  margin: 119px 0 0 97px;
+       font-family: 'Anton', sans-serif;
+  font-size:95%;
+  text-align: center;">
+        LOGIN
+      </div>
+      <form class="" action="index.html" method="post">
+
+        <!--ID 입력창 -->
+        <div class="login_ID_INPUT" style="position:absolute;
+width: 60px;
+height:20px;
+margin: 143px 0 0 110px;
+font-size:100%;
+text-align: center;">
+          <input type="text" id="ID_INPUT"
+           name="id"
+           onKeypress="javascript:if(event.keyCode==13) {login_click()}"
+            required="required"
+            placeholder="ID"
+
+            minlength="4"
+            maxlength="20" size="10"
+            style="padding-right: 77px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 3px;
+            border:none;
+            border-bottom:1px solid #000000;
+            cursor:pointer; ">
+        </div>
+
+        <!--PW 입력창 -->
+        <div class="login_PW_INPUT" style="position:absolute;
+       width: 60px;
+       height:20px;
+       margin: 173px 0 0 110px;
+       font-size:100%;
+       text-align: center;
+       ">
+          <input type="password" id="PW_INPUT" name="pw"
+          onKeypress="javascript:if(event.keyCode==13) {login_click()}"
+           required="required"
+           placeholder="PW" minlength="4" maxlength="20" size="10" style="padding-right: 77px; padding-top: 3px;padding-bottom: 3px;padding-top: 3px;padding-left: 3px;border:none;
+           border-bottom:1px solid #000000;
+           cursor:pointer;">
+        </div>
+
+        <!--로그인 버튼 -->
+        <div class="login_button" style="position:absolute;
+  width: 60px;
+  height:20px;
+  margin: 145px 0 0 292px;
+  font-size:100%;
+  text-align: center;">
+          <input type="button" id="login_button_id" name="LB" onclick="login_click()" value="로그인" required="required" style="text-align:center;
+           padding-top: 5px;
+           height: 54px;
+           padding-left: 7px;
+           padding-right: 7px;
+           background-color: #f4f4f4;
+           color:#000000;
+           border:4px inset #e4e4e4;
+           cursor:pointer;
+           ">
+        </div>
+      </form>
+      <!--회원가입 버튼 -->
+      <div class="register_button" style="position:absolute;
+          width: 60px;
+          height:20px;
+          margin: 145px 0 0 357px;
+          font-size:100%;
+          text-align: center;">
+        <input
+          type="button"
+          id="register_button_id"
+          name="RB"
+          onclick="register_click()"
+          value="회원가입"
+          required="required"
+          style="text-align:center;
+                   padding-top: 5px;
+                   height: 54px;
+                   padding-left: 1px;
+                   padding-right: 1px;
+                   background-color: #f4f4f4;
+                   color:#000000;
+                   border:4px inset #e4e4e4;
+                   cursor:pointer;
+                   ">
+      </div>
+
+      <!--비밀번호 찾기 -->
+      <div class="Find_PW" style="
+    margin-top: 203px;
+    margin-left: 272px;
+    font-size: 70%;">
+        <a href="page_find_pw.html"
+        style="text-decoration: none; color:black">
+          비밀번호를 잊어버리셨나요?</a>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

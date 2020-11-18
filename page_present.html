@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Moview</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+      function home_click() {
+        location.href = "main.html";
+      }
+      function present_click() {
+        location.href = "page_present.html";
+      }
+      function movie_click() {
+        location.href = "page_movie.html";
+      }
+      function recommand_click() {
+        location.href = "page_recommand.html";
+      }
+      function review_click() {
+        location.href = "page_review.html";
+      }
+    </script>
+  </head>
+
+  <body style="margin:0; width: 1536px;">
+
+    <!--메뉴 클래스 -->
+    <div class="menu_main" style="display:grid;
+grid-template-columns:25% 25% 25% 25%;
+text-align:center;
+">
+
+      <!--소개 메뉴 -->
+      <div id="present_cell" style="">
+        <input
+          type="button"
+          name="button_movie_present"
+          value="소개"
+          onclick="present_click()"
+          style="border:none;
+ width:100%;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ font-family: 'Nanum Gothic Coding', monospace;
+ cursor:pointer;
+ font-size: 150%; background-color:rgb(255, 255, 255);">
+
+      </div>
+
+      <!--영화 메뉴 -->
+      <div id="movie_cell" style="">
+        <input
+          type="button"
+          name="button_movie_cell"
+          value="영화"
+          onclick="movie_click()"
+          style="border:none;
+width:100%;
+padding-top: 14px;
+padding-bottom: 14px;
+font-family: 'Nanum Gothic Coding', monospace;
+cursor:pointer;
+font-size: 150%;background-color:rgb(198, 198, 198);">
+      </div>
+
+      <!--추천 메뉴 -->
+      <div id="recommand_cell" style="">
+        <input
+          type="button"
+          name="button_movie_recommand"
+          value="추천"
+          onclick="recommand_click()"
+          style="border:none;
+ width:100%;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ font-family: 'Nanum Gothic Coding', monospace;
+ cursor:pointer;
+ font-size: 150%; background-color:rgb(198, 198, 198);">
+      </div>
+
+      <!--리뷰 메뉴 -->
+      <div id="review_cell" style="">
+        <input
+          type="button"
+          name="button_movie_review"
+          value="리뷰"
+          onclick="review_click()"
+          style="border:none;
+ width:100%;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ font-family: 'Nanum Gothic Coding', monospace;
+ cursor:pointer;
+ font-size: 150%; background-color:rgb(198, 198, 198);">
+      </div>
+
+    </div>
+
+    <!--MOVIEW 로고 -->
+    <div class="logo_main" style="
+text-align:center;
+margin:0;
+padding-top: 100px;
+padding-bottom: 15px;">
+      <button type="button" name="home_button" style="
+background-color:rgb(255, 255, 255);
+cursor:pointer;
+border:none;" onclick="home_click()"><img src="C:\Users\aksdn\Desktop\web\TermProject\Logo_Moveiw.png" alt="" width="500px"></button>
+
+    </div>
+
+    <div class="present_head" style="
+position:static;
+top: 80%;
+left:50%;
+width: 100%;
+height:100%;
+margin-bottom:100px;
+font-size:20px;
+text-align:center;
+font-family: 'Nanum Gothic Coding', monospace;
+margin-top: 80px;
+-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+">
+<h1>이 웹사이트는 도대체 왜 만들어졌나?</h1>
+<p>&nbsp; </p>
+<p>안녕하세요. 처음으로 웹 개발을 시작한 이민우라고 합니다.</p>
+<p>&nbsp; </p>
+<p>처음으로 만들 홈페이지를 고민해봤는데 아무리 고민해도
+대부분의 아이디어가 이미 홈페이지로 제작이 되었더라고요.</p>
+<p>그래서 그냥 "내가 좋아하는 것으로 가볍게 만들어보자."라고 생각하고 '영화'에
+대한 웹사이트를 개발하기로 했습니다.</p>
+<p>&nbsp; </p>
+<p>처음으로 시작해보는 개발이기도 하고 지식,권한이 너무나도 없어서
+   예매,영화의 자세한 정보 공유 등 이런 거는 아예 배제시켜두고 생각했습니다.</p>
+   <p>영화에 대한 자세한 정보도 필요없고 예매시스템도 필요없는 '리뷰' 홈페이지를
+   만들자고 결심했습니다.</p>
+   <p>영화의 간단한 정보는 크롤링으로 가져오고, 글쓰기 기능(리뷰 시스템)은 구축
+   가능할 것 같다고 생각했습니다. </p>
+   <p>심지어 잘 찾아보니 대부분 영화 사이트나 예매 사이트엔
+   간단한 리뷰 작성 기능이 있지만 포스팅 형식의 커뮤니티성 사이트는 많이 없는 것
+ 같더라고요.</p>
+ <p>그래서 커뮤니티성이 강한 영화 리뷰 홈페이지를 만들어보면 재밌겠다고 생각해서
+ 제작하게 되었습니다!</p>
+</div>
+<div class="학번"
+style="
+text-align:center;
+padding-top:20px;
+padding-bottom:20px;
+background-color:rgb(198, 198, 198);
+">
+Copyright © Moview Corp. All Rights Reserved.
+</div>
+  </body>
+</html>

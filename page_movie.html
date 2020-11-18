@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Moview</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+
+<script>
+function home_click(){
+    location.href="main.html";
+}
+function present_click(){
+    location.href="page_present.html";
+}
+function movie_click(){
+    location.href="page_movie.html";
+}
+function recommand_click(){
+    location.href="page_recommand.html";
+}
+function review_click(){
+    location.href="page_review.html";
+}
+</script>
+  </head>
+
+
+
+  <body style="margin:0">
+
+
+<!--메뉴 클래스 -->
+<div class="menu_main"
+style="display:grid;
+grid-template-columns:25% 25% 25% 25%;
+text-align:center;
+">
+
+<!--소개 메뉴 -->
+ <div id="present_cell"
+ style="" >
+ <input type="button" name=button_movie_present value="소개"
+onclick="present_click()"
+ style="border:none;
+ width:100%;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ font-family: 'Nanum Gothic Coding', monospace;
+ cursor:pointer;
+ font-size: 150%; background-color:rgb(198, 198, 198);">
+
+ </div>
+
+<!--영화 메뉴 -->
+ <div id="movie_cell"
+ style="">
+<input type="button" name=button_movie_cell value="영화"
+onclick="movie_click()"
+style="border:none;
+width:100%;
+padding-top: 14px;
+padding-bottom: 14px;
+font-family: 'Nanum Gothic Coding', monospace;
+cursor:pointer;
+font-size: 150%;background-color:rgb(255, 255, 255);">
+ </div>
+
+<!--추천 메뉴 -->
+ <div id="recommand_cell"
+ style="">
+ <input type="button" name=button_movie_recommand value="추천"
+ onclick="recommand_click()"
+ style="border:none;
+ width:100%;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ font-family: 'Nanum Gothic Coding', monospace;
+ cursor:pointer;
+ font-size: 150%; background-color:rgb(198, 198, 198);">
+ </div>
+
+<!--리뷰 메뉴 -->
+ <div id="review_cell"
+ style="">
+ <input type="button" name=button_movie_review value="리뷰"
+ onclick="review_click()"
+ style="border:none;
+ width:100%;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ font-family: 'Nanum Gothic Coding', monospace;
+ cursor:pointer;
+ font-size: 150%; background-color:rgb(198, 198, 198);">
+ </div>
+
+</div>
+
+<!--MOVIEW 로고 -->
+<div class="logo_main"
+style="
+text-align:center;
+margin:0;
+padding-top: 100px;
+padding-bottom: 15px;">
+<button type="button" name="home_button" style="
+background-color:rgb(255, 255, 255);
+cursor:pointer;
+border:none;"
+onclick="home_click()"><img src="C:\Users\aksdn\Desktop\web\TermProject\Logo_Moveiw.png" alt=""
+width="500px"></button>
+
+</div>
+  </body>
+</html>
